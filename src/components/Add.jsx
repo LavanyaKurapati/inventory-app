@@ -32,7 +32,7 @@ const Add = ({
 
   return (
     <Modal isOpen>
-      <ModalHeader toggle={closeAddItem}>Add Item</ModalHeader>
+      <ModalHeader toggle={() => setIsButtonClick(false)}>Add Item</ModalHeader>
       <ModalBody>
         <Form onSubmit={addItem}>
           <FormGroup>
@@ -42,6 +42,16 @@ const Add = ({
               placeholder="Enter Title"
               name="title"
               type="text"
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="ImageUrl">Image Url</Label>
+            <Input
+              id="ImageUrl"
+              placeholder="Enter Url"
+              type="text"
+              name="imageUrl"
               onChange={handleChange}
             />
           </FormGroup>

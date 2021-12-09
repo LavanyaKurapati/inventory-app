@@ -8,10 +8,11 @@ import {
   CardText,
   Button,
   Col,
+  CardImg,
 } from "reactstrap";
 
 const Item = ({ details, deleteItem, updateItem }) => {
-  const { title, id, quantity, price } = details;
+  const { title, id, quantity, price, imageUrl } = details;
 
   const onDeleteItem = () => {
     deleteItem(id);
@@ -21,12 +22,13 @@ const Item = ({ details, deleteItem, updateItem }) => {
     <Col xs="12" md="6" lg="4" className="mb-3">
       <Card>
         <CardBody>
+          <CardImg src={imageUrl} alt={title} />
           <CardTitle tag="h5">{title}</CardTitle>
           <CardSubtitle className="mb-2 text-muted" tag="h6">
             Quantity: {quantity}
           </CardSubtitle>
           <CardText>Price : Rs {price}/-</CardText>
-          <Button color="danger" onClick={onDeleteItem}>
+          <Button color="danger" onClick={onDeleteItem} className="button">
             Delete
           </Button>
           <Button onClick={() => updateItem(details)}>Update</Button>
