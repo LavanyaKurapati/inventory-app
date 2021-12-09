@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import {
   Card,
   CardBody,
@@ -9,8 +10,8 @@ import {
   Col,
 } from "reactstrap";
 
-const Item = ({ details, deleteItem }) => {
-  const { name, id, quantity, price } = details;
+const Item = ({ details, deleteItem, updateItem }) => {
+  const { title, id, quantity, price } = details;
 
   const onDeleteItem = () => {
     deleteItem(id);
@@ -20,15 +21,15 @@ const Item = ({ details, deleteItem }) => {
     <Col xs="12" md="6" lg="4" className="mb-3">
       <Card>
         <CardBody>
-          <CardTitle tag="h5">{name}</CardTitle>
+          <CardTitle tag="h5">{title}</CardTitle>
           <CardSubtitle className="mb-2 text-muted" tag="h6">
             Quantity: {quantity}
           </CardSubtitle>
-          <CardText>Price : Rs{price}/-</CardText>
+          <CardText>Price : Rs {price}/-</CardText>
           <Button color="danger" onClick={onDeleteItem}>
             Delete
           </Button>
-          <Button>Update</Button>
+          <Button onClick={() => updateItem(details)}>Update</Button>
         </CardBody>
       </Card>
     </Col>
