@@ -78,7 +78,13 @@ const Add = ({ newItem, setNewItem, id, setId, setData, setIsButtonClick }) => {
             />
           </FormGroup>
           <Button
-            disabled={!newItem.title || !newItem.quantity || !newItem.price}
+            disabled={
+              !newItem.title ||
+              !newItem.quantity ||
+              !newItem.price ||
+              !newItem.colors ||
+              !newItem.imageUrl
+            }
           >
             Save
           </Button>
