@@ -2,6 +2,25 @@
   text-align: center;
   margin-top: 10px;
 }
-.button {
-  margin-right: 15px;
+.title {
+  color: green;
+  margin-top: 7px;
+  font-weight: 500;
+}
+.price {
+  color: brown;
+  font-weight: 500;
+}
+.price-val {
+  color: darkcyan;
+}
+.quantity {
+  color: darkmagenta;
+}
+.color-text {
+  color: dodgerblue;
+  font-weight: 500;
+}
+.pro-color {
+  color: darkslategray;
 }

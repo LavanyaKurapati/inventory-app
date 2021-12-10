@@ -9,15 +9,7 @@ import {
   ModalHeader,
 } from "reactstrap";
 
-const Add = ({
-  newItem,
-  setNewItem,
-  id,
-  setId,
-  closeAddItem,
-  setData,
-  setIsButtonClick,
-}) => {
+const Add = ({ newItem, setNewItem, id, setId, setData, setIsButtonClick }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setNewItem({ ...newItem, [name]: value, id });
@@ -62,6 +54,16 @@ const Add = ({
               placeholder="Enter Quantity"
               type="text"
               name="quantity"
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="Color">Available colors</Label>
+            <Input
+              id="Color"
+              placeholder="Enter Colors"
+              type="text"
+              name="colors"
               onChange={handleChange}
             />
           </FormGroup>

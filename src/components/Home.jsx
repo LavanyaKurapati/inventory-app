@@ -11,14 +11,16 @@ const initialList = [
     imageUrl:
       "https://images.firstpost.com/wp-content/uploads/2021/06/OnePlus-9R.jpg",
     quantity: 3,
+    colors: "Blue, Gold, Black",
     price: "25,000",
   },
   {
     id: 2,
-    title: "mac pro",
+    title: "Mac pro",
     imageUrl:
       "https://cdn.vox-cdn.com/thumbor/R2SA3MYsidEVim4BuRPsPa0A5zc=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/70247197/akrales_211020_4803_0004.0.jpg",
     quantity: 2,
+    colors: "white, Black",
     price: "45,000",
   },
   {
@@ -27,7 +29,8 @@ const initialList = [
     imageUrl:
       "https://static.toiimg.com/thumb/resizemode-4,msid-59642405,width-1200,height-900/59642405.jpg",
     quantity: 10,
-    price: "35,000",
+    colors: "Silver, Black",
+    price: "55,000",
   },
   {
     id: 4,
@@ -35,7 +38,26 @@ const initialList = [
     imageUrl:
       "https://s.yimg.com/uu/api/res/1.2/15rAxiM1hQ16L_Y1kkkXFw--~B/aD0xMjAwO3c9MTgwMDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2020-10/53aaa740-1301-11eb-b5fe-608fd08339b9.cf.jpg",
     quantity: 3,
+    colors: "Blue, Gold, Black",
     price: "30,900",
+  },
+  {
+    id: 5,
+    title: "Samsung Refrigerator",
+    imageUrl:
+      "https://www.cnet.com/a/img/hub/2017/05/25/d1df7091-3fc7-4fad-9a9f-2720cff6511c/samsung-rf28k9380sg-refrigerator-product-photos-13.jpg",
+    quantity: 20,
+    colors: "Blue, Brown, Black",
+    price: "74,990",
+  },
+  {
+    id: 6,
+    title: "Whirlpool Washing Machine",
+    imageUrl:
+      "https://content.fortune.com/wp-content/uploads/2016/01/ovci50dw5gqt3l2f90wu.jpg",
+    quantity: 25,
+    colors: "Brown, Grey, Black",
+    price: "14,990",
   },
 ];
 

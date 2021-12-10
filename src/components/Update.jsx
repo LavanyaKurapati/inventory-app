@@ -12,7 +12,7 @@ import {
 
 const Update = ({ closeModal, editObj, updatedItem }) => {
   const [newUpdateItem, setNewUpdateItem] = useState(editObj);
-  console.log(newUpdateItem);
+  //console.log(newUpdateItem);
 
   const updateInputValue = (event) => {
     const { name, value } = event.target;
@@ -43,6 +43,17 @@ const Update = ({ closeModal, editObj, updatedItem }) => {
               type="text"
               value={newUpdateItem.quantity}
               name="quantity"
+              onChange={updateInputValue}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="Color">Available Colors</Label>
+            <Input
+              id="Color"
+              placeholder="Enter Colors"
+              type="text"
+              value={newUpdateItem.colors}
+              name="colors"
               onChange={updateInputValue}
             />
           </FormGroup>
